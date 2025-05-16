@@ -117,4 +117,13 @@ public class Test {
         int actualProductElements = homePage.getElementsFromSearchPage(searchRequest).size();
         Assert.assertEquals(expectedProductElements, actualProductElements);
     }
+
+//    @org.junit.Test
+//    public void testSearchPanelWithScriptValue() {
+//        int expectedProductElements = 0;
+//        String searchRequest = "<script>alert(\"Ready for XSS injection\")</script>";
+//        int actualProductElements = homePage.getElementsFromSearchPage(searchRequest).size();
+//        Alert modalWindowXSS = wait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
+//        Assert.assertEquals(expectedProductElements, actualProductElements);
+//    }
 }
